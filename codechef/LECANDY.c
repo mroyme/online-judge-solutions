@@ -9,16 +9,16 @@
 
 int main(void)
 {
-	unsigned short t;
-	scanf("%hu", &t);
+	int t;
+	scanf("%d", &t);
 	while (t--) {
-		unsigned short n;
+		unsigned int n;
 		long c;
-		scanf("%hu %li", &n, &c);
-		int i;
+		scanf("%u %li", &n, &c);
+		unsigned int i;
 		for (i = 0; i < n; i++) {
-			int tmp;
-			scanf("%d", &tmp);
+			unsigned int tmp;
+			scanf("%u", &tmp);
 			c -= tmp;
 		}
 		printf(c < 0 ? "No\n" : "Yes\n");
