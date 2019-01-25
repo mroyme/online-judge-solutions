@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-int main()
+int main(void)
 {
 	int t;
 	scanf("%d", &t);
