@@ -16,13 +16,10 @@ func main() {
 	defer f.Close()
 
 	sc := bufio.NewScanner(f)
-
 	sum := 0
 
 	for sc.Scan() {
-
-		first := 0
-		last := 0
+		first, last := 0, 0
 
 		line := []rune(sc.Text())
 
@@ -43,7 +40,6 @@ func main() {
 				break
 			}
 		}
-
 		sum += first*10 + last
 	}
 	fmt.Println(sum)
